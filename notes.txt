@@ -1,0 +1,6 @@
+MongoDB Atlas
+- Database = practice-project
+  username = yashsolanki1622_db_user
+  password = Fguuuml5Lwcj1wsh
+  connection_url = mongodb+srv://yashsolanki1622_db_user:Fguuuml5Lwcj1wsh@cluster0.iolebsr.mongodb.net/
+  

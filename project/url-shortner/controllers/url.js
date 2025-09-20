@@ -3,7 +3,9 @@ import shortid from "shortid";
 export const shortUrl = async (req, res) => {
   const { longUrl } = req.body;
   const shortCode = shortid.generate();
-  const shortUrl = `http://localhost:4000/${shortCode}`;
+  const shortUrl = `${
+    process.env.BASE_URL || "http://localhost:4000"
+  }/${shortCode}`;
 
   // save to database
   const newUrl = new Url({

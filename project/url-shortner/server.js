@@ -13,7 +13,8 @@ app.use(express.json()); // allow json object from postman api also
 
 mongoose
   .connect(
-    "mongodb+srv://yashsolanki1622_db_user:Fguuuml5Lwcj1wsh@cluster0.iolebsr.mongodb.net/",
+    process.env.MONGODB_URI ||
+      "mongodb+srv://yashsolanki1622_db_user:Fguuuml5Lwcj1wsh@cluster0.iolebsr.mongodb.net/",
     { dbName: "project" }
   )
   .then(() => console.log("MongoDB connected"))
